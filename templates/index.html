@@ -10,7 +10,7 @@
         <h1>Обо мне</h1>
         <div class="about-content">
             <div class="text-container">
-                <p>Привет! Я разработчик с опытом в Python, JavaScript, С и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов..</p>
+                <p>Привет! Я разработчик с опытом в Python, JavaScript, С и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов.</p>
                 <p>Давайте вместе создадим что-то удивительное!</p>
                 <div class="icons">
                     <a class='link' href="https://github.com/Vombit" target="_blank"><img class="icon animation_compressing" src="static\images\icons\github.svg" alt="Github"></a>
@@ -35,7 +35,7 @@
                         <div class="sub">{{ project['description'] }}</div>
                         <div class="links">
                             {% for icon in project['icons'] %}
-                                <img class="icon" src="static\images\icons\{{ icon }}.svg" title="{{ project['language'] }}">
+                                <img class="icon" src="static\images\icons\{{ icon }}.svg" title="{{ icon }}">
                             {% endfor %}
                             <a class="link animation_compressing" href="{{ project['github_link'] }}" alt="Посетить Github" target="_blank"><img class="icon" src="static\images\icons\github.svg"></a>
                             <!-- <img class="icon animation_compressing" src="static\images\icons\more.svg" title="Больше"> -->
