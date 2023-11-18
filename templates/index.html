@@ -39,13 +39,25 @@
                                 <img class="icon" src="static\images\icons\{{ icon }}.svg" title="{{ icon }}">
                             {% endfor %}
                             <a class="link animation_compressing" href="{{ project['github_link'] }}" alt="Посетить Github" target="_blank"><img class="icon" src="static\images\icons\github.svg"></a>
-                            <!--<img class="icon animation_compressing" src="static\images\icons\more.svg" title="Больше">-->
+                            <img class="icon animation_compressing" src="static\images\icons\more.svg" title="Больше" onclick="openPopup('{{ project['title'] }}', '{{ project['popup_description'] }}', {{ project['packages'] }})">
                         </div>
                     </div>
                 </div>
             {% endfor %}
         </div>
     </div>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img class="icon animation_compressing" src="static\images\icons\close.svg" title="Закрыть" onclick="closePopup()">
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+            <h3>Зависимости:</h3>
+            <ul id="popup-dependencies"></ul>
+        </div>
+    </div>
     <footer>Copyright © Vombit 2023</footer>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>
