@@ -199,10 +199,16 @@ a:hover {
     .container {
         width: 80%;
     }
+    .popup-content {
+        max-width: 60%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .container {
         width: 98%;
+    }
+    .popup-content {
+        max-width: 80%;
     }
 }
