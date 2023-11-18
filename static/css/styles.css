@@ -199,10 +199,20 @@ a:hover {
     .container {
         width: 80%;
     }
+    .popup-content {
+        max-width: 60%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .container {
         width: 98%;
+    }
+    .popup-content {
+        max-width: 80%;
+    }
+    .projects {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 20px;
     }
 }
