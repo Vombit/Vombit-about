@@ -7,11 +7,12 @@
 </head>
 <body>
     <div id='about' class="container">
-        <h1>Обо мне</h1>
+        <h1>{{ description['about_title'] }}</h1>
+        
         <div class="about-content">
             <div class="text-container">
-                <p>Привет! Я разработчик с опытом в Python, JavaScript и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов. (Не забудте нажать на "...", чтоб узнать больше о проекте)</p>
-                <p>Давайте вместе создадим что-то удивительное!</p>
+                <p>{{ description['about_text'] }}</p>
+                <p>{{ description['about_text2'] }}</p>
                 <div class="icons">
                     <a class='link' href="https://t.me/Vombit" target="_blank"><img class="icon animation_compressing" src="static\images\icons\telegram.svg" alt="telegram"></a>
                     <a class='link' href="https://github.com/Vombit" target="_blank"><img class="icon animation_compressing" src="static\images\icons\github.svg" alt="Github"></a>
@@ -22,11 +23,11 @@
                 <img src="static/images/0.png" alt="Мой логотип" class="logo">
             </div>
         </div>
-        <p>Так же двукратный призер регионального чемпионата WorldSkills (2021-2022) по компетенции "Интернет вещей (IoT)".</p>
+        <p>{{ description['sub_text'] }}</p>
     </div>
     <div id='project' class="container">
-        <h1>Проекты</h1>
-        <h3>Ознакомьтесь моими проектами проектами!</h3>
+        <h1>Projects</h1>
+        <h3>{{ description['project_text'] }}</h3>
         <div class="projects">
             {% for project in projects %}
                 <div class="project">
@@ -53,7 +54,7 @@
             <img class="icon animation_compressing" src="static\images\icons\close.svg" title="Закрыть" onclick="closePopup()">
             <h2 id="popup-title"></h2>
             <p id="popup-description"></p>
-            <h3>Зависимости:</h3>
+            <h3>Dependencies:</h3>
             <ul id="popup-dependencies"></ul>
         </div>
     </div>

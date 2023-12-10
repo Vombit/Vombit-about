@@ -1,5 +1,23 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
+
+
+description = {
+    'about_title': 'Обо мне',
+    'about_text': 'Привет! Я разработчик с опытом в Python, JavaScript и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов. (Не забудте нажать на "...", чтоб узнать больше о проекте)',
+    'about_text2': 'Давайте вместе создадим что-то удивительное!',
+    'sub_text': 'Так же двукратный призер регионального чемпионата WorldSkills (2021-2022) по компетенции "Интернет вещей (IoT)".',
+    'project_text': 'Ознакомьтесь моими проектами проектами!'
+}
+
+description_en = {
+    'about_title': 'About Me',
+    'about_text': 'Hello! I\'m a developer experienced in Python, JavaScript, and SQL. My passion for coding inspires me to seek new solutions and possibilities. My inspiration lies in creating unique projects. Here, you can explore some of my projects. (Don\'t forget to click on "..." to learn more about the project)',
+    'about_text2': 'Let\'s create something amazing together!',
+    'sub_text': 'I\'m also a two-time winner of the regional WorldSkills championship (2021-2022) in the "Internet of Things (IoT)" competition.',
+    'project_text': 'Explore my projects!'
+}
+
 
 projects = [
     {
@@ -143,9 +161,161 @@ projects = [
     },
 ]
 
+projects_en = [
+   {
+        'title': 'Buy-Item-by-Pattern',
+        'description': 'A bot designed for automatic purchase of Steam items and notifying via Telegram.',
+        'icons': ['Python', 'docker'],
+        'language': 'Python',
+        'github_link': 'https://github.com/Vombit/buy-item-by-pattern',
+        'image': '6.jpg',
+        'popup_description': 'In one of my previous orders, I was tasked with an exciting yet somewhat atypical project. It involved automating purchases in CS (Counter-Strike). My goal was to create a system capable of acting on behalf of a game user, buying various items within the game world. Upon successful purchase, the system sent notifications through a Telegram bot to keep the client informed about the process.<br><br>Developing this system was an intriguing challenge. The need to create a mechanism that mimicked human behavior in the game required a meticulous approach. Every step had to be precisely planned and implemented to avoid potential security issues and detection by the Steam system.',
+        'packages': [
+            'steampy==0.80',
+            'python-dotenv==1.0.0',
+            'Pillow==9.5.0',
+            'python-telegram-bot==20.3',
+            'playwright==1.34.0'
+        ]
+    },
+    {
+        'title': 'Quasar',
+        'description': 'Music streaming platform.',
+        'icons': ['Python', 'docker', 'django', 'jquery'],
+        'language': 'Python',
+        'github_link': 'https://github.com/Vombit/quasar',
+        'image': '8.jpg',
+        'popup_description': 'When music streaming services like Spotify began restricting access or becoming unavailable in certain regions, the idea of creating our own music platform emerged. After all, everyone deserves the pleasure of music regardless of their location.<br><br>Ensuring user-friendliness and accessibility of this platform while maintaining a diverse range of music content was crucial. This approach would allow different communities and geographic regions to create their own curatorial systems or collectives, sharing musical preferences and enriching their content.<br><br>Thus, this idea represented not just an alternative for accessing music but also an opportunity for everyone to create a unique music platform tailored to their preferences and needs.',
+        'packages': [
+            'asgiref==3.6.0',
+            'backports.zoneinfo==0.2.1',
+            'cutlet==0.1.19',
+            'Django==4.1.5',
+            'django-cleanup==6.0.0',
+            'fugashi==1.2.1',
+            'jaconv==0.3.3',
+            'mojimoji==0.0.12',
+            'mutagen==1.46.0',
+            'Pillow==9.4.0',
+            'six==1.16.0',
+            'sorl-thumbnail==12.9.0',
+            'sqlparse==0.4.3',
+            'transliterate==1.10.2',
+            'tzdata==2022.7',
+            'unidic-lite==1.0.8'
+        ]
+    },
+    {
+        'title': 'IO-AI',
+        'description': 'Telegram bot combined with OpenAI.',
+        'icons': ['Python', 'docker'],
+        'language': 'Python',
+        'github_link': 'https://github.com/Vombit/io-ai',
+        'image': '5.jpg',
+        'popup_description': 'One of the projects I worked on involved creating a personal bot with access to ChatGPT features. This project was conceived and implemented solely for enjoyment and entertainment.<br><br>The idea was to develop a kind of virtual assistant capable not only of answering questions but also engaging in interesting conversations, providing information, and even performing specific tasks using the capabilities and knowledge of ChatGPT.',
+        'packages': [
+            'openai==0.27.2',
+            'python-telegram-bot==20.2',
+            'python-dotenv==1.0.0'
+        ]
+    },
+        {
+        'title': 'Device-Moving-View',
+        'description': 'Tracking location, monitoring, and managing goods.',
+        'icons': ['NodeJs', 'docker', 'jquery'],
+        'language': 'Node.js',
+        'github_link': 'https://github.com/Vombit/Device_Moving_View',
+        'image': '2.jpg',
+        'popup_description': 'One of the most significant and memorable projects, in my opinion, was a job where I acquired a vast amount of new knowledge and skills. This project became a true school for me as it introduced me to new development methods such as using kanban boards, conducting sprints, participating in meetings, and applying various problem-solving strategies.<br><br>One of the key aspects of this work was that it taught me not only to follow instructions but also actively seek solutions to problems independently. It was a valuable experience that made me a more self-reliant and confident developer.<br><br>I would like to express immense gratitude to our mentor who played a pivotal role in this project. His support, wise advice, and expert guidance were invaluable.',
+        'packages': [
+            'body-parser: ^1.19.0',
+            'cookie-parser: ^1.4.5',
+            'dotenv: ^9.0.2',
+            'ejs: ~2.6.1',
+            'express: ~4.16.1',
+            'express-session: ^1.17.2',
+            'fast-csv: ^4.3.6',
+            'fast-csv-delims: 0.0.211',
+            'fs: 0.0.1-security',
+            'jimp: ^0.16.1',
+            'multer: ^1.4.2',
+            'mysql2: ^2.2.5',
+            'qrcode: ^1.4.4',
+            'url: ^0.11.0'
+        ]
+    },
+    {
+        'title': 'File-Separator',
+        'description': 'A program designed to split files into chunks.',
+        'icons': ['Python', 'qt'],
+        'language': 'Python',
+        'github_link': 'https://github.com/Vombit/file-separator',
+        'image': '7.jpg',
+        'popup_description': 'Once, I had an intriguing idea to create a program capable of dividing files into smaller parts or chunks and merging them back when needed. It was an unusual yet practical idea that circumvented file size limitations on various services. The idea was to enable uploading files of any size to services with restrictions on uploaded file sizes.<br><br>During the project, I also attempted to implement an encryption system for each file chunk. This allowed the safe transmission and distribution of files while maintaining their confidentiality. The concept was to encrypt each chunk separately, making them independent from each other and enhancing security during data transmission or storage.<br><br>For me, this project was a real challenge and an opportunity to delve into the world of file systems, data encryption, and optimizing the process of working with large files.',
+        'packages': [
+            'cryptography==41.0.5',
+            'PyQt5==5.15.10'
+        ]
+    },
+    {
+        'title': 'Sound-Waves',
+        'description': 'Client-server application for audio streaming over a network.',
+        'icons': ['Python'],
+        'language': 'Python',
+        'github_link': 'https://github.com/Vombit/Sound-Waves',
+        'image': '4.jpg',
+        'popup_description': 'One of my experimental projects involved creating a program capable of streaming audio signals from music sources or a microphone over a local network. Within this project, I developed the server-side application as well as a client application on the Kivy platform to ensure user convenience.<br><br>Although this project remained at the prototype stage, it was an engaging experience in software development. Working on it allowed me to dive into the world of creating user interfaces for different operating systems, which was an unfamiliar yet fascinating challenge. Using the Kivy framework to create the client-side application opened new horizons in interface creation and adaptation for various platforms.<br><br>One of the most interesting aspects of this project was working with capturing audio signals and music tracks from the system. This required a deep dive into technical nuances related to sound processing, capturing, and transmission over a network.',
+        'packages': [
+            'Flask==3.0.0',
+            'PyAudio==0.2.14',
+            'Kivy==2.2.1',
+            'urllib3==2.1.0'
+        ]
+    },
+    {
+        'title': 'Yumi-v2.0',
+        'description': 'Discord bot with activities and economy.',
+        'icons': ['NodeJs', 'discordjs'],
+        'language': 'Node.js',
+        'github_link': 'https://github.com/Vombit/Discord-Yumi-Bot-v2.0',
+        'image': '3.jpg',
+        'popup_description': 'This project went through many changes. At the peak of Discord server popularity, there was an idea to create a bot to cater to their needs.<br><br>Initially, it included numerous features, from user activities and profiles to economy and music streaming. At its peak, the user count reached ~200,000.<br><br>However, maintaining such an ambitious project became challenging alone.<br><br>In the end, it was decided to leave it in the past and move forward. This experience became an important lesson about the necessity of adapting to changes in the dynamic realm, such as the Discord community.',
+        'packages': [
+            "@discordjs/opus: ^0.4.0",
+            "discord.js: ^12.5.1",
+            "distube: ^2.8.11",
+            "dotenv: ^8.2.0",
+            "ffmpeg-static: ^4.2.7",
+            "fs: 0.0.1-security",
+            "jimp: ^0.16.1",
+            "mysql2: ^2.2.5"
+        ]
+    },
+    {
+        'title': 'VkCustom',
+        'description': 'Customizing Vkontakte design.',
+        'icons': ['JavaScript'],
+        'language': 'JavaScript',
+        'github_link': 'https://github.com/Vombit/VkCustom',
+        'image': '1.jpg',
+        'popup_description': 'Customizing the style for Vkontakte.<br><br>The extension adds a dark theme to the social network Vk.com, which slightly changes the network\'s design and reduces eye strain during dark hours. Expand your possibilities.<br><br>My very first public project arose from the need for a dark theme for Vk when it didn\'t exist yet. The simplest working principle involved replacing the original CSS file and adding a JS script to change the site\'s background to a custom image/gif.<br>Extension: <a href="https://chromewebstore.google.com/detail/vkcustom/oehnhecdbdmdbkamifpmcddelbmfgjfh" target="_blank">chromewebstore</a><br><br>Looking back, much could have been changed and improved, but I won\'t go back...',
+        'packages': ['none']
+    },
+]
+
 @app.route('/')
 def index() -> str:
-    return render_template('index.html', projects=projects)
+    supported_languages = ["ru", "en"]
+    lang = request.accept_languages.best_match(supported_languages)
+    print(lang)
+    
+    project = projects_en
+    descr = description_en
+    if lang == "ru":
+        project = projects
+        descr = description
+    
+    return render_template('index.html', projects=project, description=descr)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='80')
