@@ -21,6 +21,29 @@ description_en = {
 
 projects = [
     {
+        'title': 'Интернет магазин',
+        'description': '(в разработке)',
+        'icons': [],
+        'language': '',
+        'github_link': '',
+        'image': '',
+        'popup_description': '',
+        'packages': [
+        ]
+    },
+    {
+        'title': 'Caelum',
+        'description': 'Бесконечное файловое хранилище (в разработке)',
+        'icons': [],
+        'language': '',
+        'github_link': 'https://github.com/Vombit/caelum',
+        'image': '',
+        'popup_description': '',
+        'packages': [
+        ]
+    },
+    
+    {
         'title': 'Buy-Item-by-Pattern',
         'description': 'Бот предназначен для автоматической скупки предметов Steam, и уведомление в телеграм',
         'icons': ['Python', 'docker'],
@@ -162,6 +185,29 @@ projects = [
 ]
 
 projects_en = [
+    {
+        'title': 'Online store',
+        'description': '(under development)',
+        'icons': [],
+        'language': '',
+        'github_link': '',
+        'image': '',
+        'popup_description': '',
+        'packages': [
+        ]
+    },
+    {
+        'title': 'Caelum',
+        'description': 'Infinite file storage (under development)',
+        'icons': [],
+        'language': '',
+        'github_link': 'https://github.com/Vombit/caelum',
+        'image': '',
+        'popup_description': '',
+        'packages': [
+        ]
+    },
+    
    {
         'title': 'Buy-Item-by-Pattern',
         'description': 'A bot designed for automatic purchase of Steam items and notifying via Telegram.',
