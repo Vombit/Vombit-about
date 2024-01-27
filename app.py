@@ -7,7 +7,7 @@ description = {
     'about_text': 'Привет! Я разработчик с опытом в Python, JavaScript и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов. (Не забудте нажать на "...", чтоб узнать больше о проекте)',
     'about_text2': 'Давайте вместе создадим что-то удивительное!',
     'sub_text': 'Так же двукратный призер регионального чемпионата WorldSkills (2021-2022) по компетенции "Интернет вещей (IoT)".',
-    'project_text': 'Ознакомьтесь моими проектами проектами!'
+    'project_text': 'Ознакомьтесь с моими проектами!'
 }
 
 description_en = {
@@ -21,14 +21,18 @@ description_en = {
 
 projects = [
     {
-        'title': 'Интернет магазин',
-        'description': '(в разработке)',
-        'icons': [],
-        'language': '',
+        'title': 'Интернет магазин FeelBro',
+        'description': 'Интернет магазин вещей для FeelBro',
+        'icons': ['Python', 'JavaScript', 'docker', 'jquery'],
+        'language': 'Python',
         'github_link': '',
-        'image': '',
-        'popup_description': '',
+        'image': '9.jpg',
+        'popup_description': 'Разработка интернет-магазина для бренда FeelBro была захватывающим творческим и техническим процессом. Несмотря на трудности с интеграцией доставки, опыт работы принес удовлетворение. <br><br>Сайт был создан с нуля без использования типичных шаблонов, обеспечив в какой то степени индивидуальность бренда. Основное внимание уделялось интуитивной понятности для пользователей, что привело к созданию стильного и функционального интерфейса. <br><br>Результат – успешный и понятный веб-магазин, отражающий особенности <a href="https://feelbro.store" target="_blank">FeelBro</a>',
         'packages': [
+            'Django==5.0',
+            'Pillow==10.2.0',
+            'yookassa==3.0.0',
+            'mysqlclient==2.2.1'
         ]
     },
     {
@@ -186,14 +190,18 @@ projects = [
 
 projects_en = [
     {
-        'title': 'Online store',
-        'description': '(under development)',
-        'icons': [],
-        'language': '',
+        'title': 'FeelBro Online Store',
+        'description': 'Online store for FeelBro merchandise',
+        'icons': ['Python', 'JavaScript', 'docker', 'jquery'],
+        'language': 'Python',
         'github_link': '',
-        'image': '',
-        'popup_description': '',
+        'image': '9.jpg',
+        'popup_description': 'The development of the online store for the FeelBro brand was an exciting and technical process. Despite challenges with delivery integration, the experience brought satisfaction. <br><br>The website was built from scratch without using typical templates, ensuring a degree of uniqueness for the brand. The primary focus was on intuitive user-friendliness, leading to the creation of a stylish and functional interface. <br><br>The result is a successful and user-friendly web store, reflecting the characteristics of <a href="https://feelbro.store" target="_blank">FeelBro</a>.',
         'packages': [
+            'Django==5.0',
+            'Pillow==10.2.0',
+            'yookassa==3.0.0',
+            'mysqlclient==2.2.1'
         ]
     },
     {

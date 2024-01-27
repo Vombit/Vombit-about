@@ -39,7 +39,9 @@
                             {% for icon in project['icons'] %}
                                 <img class="icon" src="static\images\icons\{{ icon }}.svg" title="{{ icon }}">
                             {% endfor %}
+                            {% if project['github_link'] %}
                             <a class="link animation_compressing" href="{{ project['github_link'] }}" alt="Посетить Github" target="_blank"><img class="icon" src="static\images\icons\github.svg"></a>
+                            {% endif %}
                             <img class="icon animation_compressing" src="static\images\icons\more.svg" title="Больше" onclick="openPopup('{{ project['title'] }}', '{{ project['popup_description'] }}', {{ project['packages'] }})">
                         </div>
                     </div>
