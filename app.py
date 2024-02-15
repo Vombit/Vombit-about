@@ -18,7 +18,6 @@ description_en = {
     'project_text': 'Explore my projects!'
 }
 
-
 projects = [
     {
         'title': 'Интернет магазин FeelBro',
@@ -37,16 +36,19 @@ projects = [
     },
     {
         'title': 'Caelum',
-        'description': 'Бесконечное файловое хранилище (в разработке)',
-        'icons': [],
-        'language': '',
+        'description': 'Бесконечное файловое хранилище',
+        'icons': ['Python', 'JavaScript', 'qt'],
+        'language': 'Python',
         'github_link': 'https://github.com/Vombit/caelum',
-        'image': '',
-        'popup_description': '',
+        'image': '10.jpg',
+        'popup_description': 'Это продолжение взгляда, на мою программу для разделения файлов на чанки.<br><br> Данная программа позволяет загружать бесконечное количество файлов на сервера мессенджеров, обходя ограничения по размеру файлов. Теперь достаточно просто поместить программу и файл данных на флешку, чтобы получить доступ ко всей вашей информации в любом месте с доступом к интернету и возможностью запустить программу.<br> Это устраняет необходимость в крупных носителях данных. Конечно же, не стоит ожидать абсолютной гарантии сохранности данных, поэтому избегайте хранения чрезвычайно важной информации в данном контексте.<br><br> Проект был разработан исключительно в целях удовлетворения интереса и упрощения доступа к информации.',
         'packages': [
+            'auto-py-to-exe==2.42.0',
+            'PyQtWebEngine==5.15.6',
+            'requests==2.31.0',
+            'PyQt5==5.15.10'
         ]
     },
-    
     {
         'title': 'Buy-Item-by-Pattern',
         'description': 'Бот предназначен для автоматической скупки предметов Steam, и уведомление в телеграм',
@@ -206,16 +208,19 @@ projects_en = [
     },
     {
         'title': 'Caelum',
-        'description': 'Infinite file storage (under development)',
-        'icons': [],
-        'language': '',
+        'description': 'Infinite file storage',
+        'icons': ['Python', 'JavaScript', 'qt'],
+        'language': 'Python',
         'github_link': 'https://github.com/Vombit/caelum',
-        'image': '',
-        'popup_description': '',
+        'image': '10.jpg',
+        'popup_description': 'This is a follow-up to my previous post about my program for splitting files into smaller chunks.<br><br> This program allows you to upload an unlimited number of files to Messenger servers, bypassing the file size limit.<br> Now, all you need to do is to put the program and your data file on a USB drive to access all your information from anywhere with internet access and the ability to run the program.<br> This eliminates the need for bulky storage media. However, you should be aware that there is no absolute guarantee of data security. Therefore, it is not recommended to store extremely sensitive information in this manner.<br><br> The project was created solely for the purpose of satisfying our users interest and providing easy access to information.',
         'packages': [
+            'auto-py-to-exe==2.42.0',
+            'PyQtWebEngine==5.15.6',
+            'requests==2.31.0',
+            'PyQt5==5.15.10'
         ]
-    },
-    
+    }, 
    {
         'title': 'Buy-Item-by-Pattern',
         'description': 'A bot designed for automatic purchase of Steam items and notifying via Telegram.',
