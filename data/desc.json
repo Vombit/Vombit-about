@@ -1,0 +1,17 @@
+{
+    "base": {
+        "about_title": "About Me",
+        "about_text": "Hello! I\"m a developer experienced in Python, JavaScript, and SQL. My passion for coding inspires me to seek new solutions and possibilities. My inspiration lies in creating unique projects. Here, you can explore some of my projects. (Don\"t forget to click on \"...\" to learn more about the project)",
+        "about_text2": "Let\"s create something amazing together!",
+        "sub_text": "I\"m also a two-time winner of the regional WorldSkills championship (2021-2022) in the \"Internet of Things (IoT)\" competition.",
+        "project_text": "Explore my projects!"
+    },
+    "ru": {
+        "about_title": "Обо мне",
+        "about_text": "Привет! Я разработчик с опытом в Python, JavaScript и SQL. Моя страсть к кодированию вдохновляет меня на поиск новых решений и возможностей. Мое вдохновение – создание уникальных проектов. Тут вы можете ознакомиться с некоторыми из моих проектов. (Не забудте нажать на \"...\", чтоб узнать больше о проекте)",
+        "about_text2": "Давайте вместе создадим что-то удивительное!",
+        "sub_text": "Так же двукратный призер регионального чемпионата WorldSkills (2021-2022) по компетенции \"Интернет вещей (IoT)\".",
+        "project_text": "Ознакомьтесь с моими проектами!"
+    }
+
+}
