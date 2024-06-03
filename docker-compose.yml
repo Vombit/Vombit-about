@@ -3,6 +3,8 @@ version: '3.8'
 services:
   web:
     build: .
+    volumes:
+      - ./data:/app/data
     ports:
       - "80:80"
     restart: always
