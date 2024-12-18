@@ -1,6 +1,20 @@
 {
     "base": [
         {
+            "title": "Object Detection YOLOv10 for CS2",
+            "description": "A YOLOv10 system for analyzing CS2 gameplay and calculating object statistics.",
+            "icons": ["Python"],
+            "language": "Python",
+            "github_link": "https://huggingface.co/collections/Vombit/yolov-cs2-66ec8429856654bd58619d3a",
+            "image": "11.jpg",
+            "popup_description": "Creation of a high-performance object detection and classification system in the CS2 (Counter-Strike 2) game using the YOLOv10 algorithm. The system is designed to analyze the gameplay, automate the calculation of statistics and improve the quality of streaming /analysis by accurately recognizing key game objects.",
+            "packages": [
+                "YOLOv10",
+                "YOLOv9",
+                "PyTorch"
+            ]
+        },
+        {
             "title": "FeelBro Online Store",
             "description": "Online store for FeelBro merchandise",
             "icons": ["Python", "JavaScript", "docker", "jquery"],
@@ -162,6 +176,20 @@
         }
     ],
     "ru": [
+        {
+            "title": "Object Detection YOLOv10 для CS2",
+            "description": "Система на YOLOv10 для анализа игрового процесса в CS2 и подсчета статистики объектов.",
+            "icons": ["Python"],
+            "language": "Python",
+            "github_link": "https://huggingface.co/collections/Vombit/yolov-cs2-66ec8429856654bd58619d3a",
+            "image": "11.jpg",
+            "popup_description": "Создание высокопроизводительной системы обнаружения и классификации объектов в игре CS2 (Counter-Strike 2) с использованием алгоритма YOLOv10. Система предназначена для анализа игрового процесса, автоматизации подсчета статистики и повышения качества стриминга/анализов за счет точного распознавания ключевых игровых объектов.",
+            "packages": [
+                "YOLOv10",
+                "YOLOv9",
+                "PyTorch"
+            ]
+        },
         {
             "title": "Интернет магазин FeelBro",
             "description": "Интернет магазин вещей для FeelBro",
