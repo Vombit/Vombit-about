@@ -5,6 +5,7 @@ services:
     build: .
     volumes:
       - ./data:/app/data
+      - ./static:/app/static
     ports:
       - "80:80"
     restart: always
